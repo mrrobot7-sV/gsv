@@ -40,7 +40,7 @@ def print_host(args, ip, ports):
     else:
         print_nmap_cmd_sV(ip, ports)
 
-def print_gsv(args, nmap_report):
+def print_nmap_cmds(args, nmap_report):
     openports = []
     openhost = False
 
@@ -66,7 +66,7 @@ def main():
         optional.add_argument('-v', help="more verbose output", action='store_true', required=False)
         args = parser.parse_args() 
         nmap_report = NmapParser.parse_fromfile(args.xml_file)
-        print_gsv(args, nmap_report)
+        print_nmap_cmds(args, nmap_report)
 
     except Exception as e:
         print(e)
