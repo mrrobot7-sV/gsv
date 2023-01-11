@@ -3,7 +3,7 @@ Generate nmap version detection command (-sV) from the XML-output file generated
 # Installation
 
 + Install requirements: ```pip install python-libnmap```
-+ Download [nmap_parse_mrrobot7-sV/nmap_parse.py](nmap-gsv.py)
++ Download [https://raw.githubusercontent.com/mrrobot7-sV/nmap-gsv/main/nmap_parse_mrrobot7-sV/nmap_parse.py](nmap-gsv.py)
 
 # How to use
 ```
