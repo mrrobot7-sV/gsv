@@ -11,6 +11,16 @@ python3 gsv.py -h
 python3 gsv.py -x ./nmap_report.xml
 python3 gsv.py -x ./nmap_report.xml -p ports
 ```
+## Linux
+If you have admin rights to `usr/local/bin` then copy the file here and change the rights to 755 + if you add an alias like `gsv=gsv.py` you can run the script from anywhere from the command line:
+1. copy [gsv.py](gsv_mrrobot7-sV/gsv.py) to `usr/local/bin`
+2. `chmod u+x gsv.py`
+3. add an alias, e.g. `gsv=gsv.py`
+
+```
+$ gsv -x ./nmap-report_all-ports.xml 
+nmap 10.10.11.47 -p 80,135,139,445,3389,49663,49667,49669 -sV -vv
+```
 
 # Example
 ```
