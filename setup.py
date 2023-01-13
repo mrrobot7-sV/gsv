@@ -9,7 +9,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = "nmap_gsv",
+    name = "gsv",
     version = "0.1",
     author = "John Abraham",
     author_email = "pdv.dev07@outlook.com",
@@ -19,7 +19,7 @@ setup(
     keywords = "nmap parser",
     python_requires='>=3',
     url = "https://github.com/mrrobot7-sV/nmap-gsv",
-    packages=['nmap_gsv_mrrobot7-sV'],
+    packages=['gsv_mrrobot7-sV'],
     long_description=read('README.md'),
     install_requires=['python-libnmap>=0.7.3'],
     classifiers=[
